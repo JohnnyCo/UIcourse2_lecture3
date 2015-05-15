@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8" />
+	<title>Five Things You Should Know About HTML5 - Dive Into HTML5</title>
+	<link rel="shortcut icon" href="img/favicon2.ico" />
+</head>
+<body>
+	<p>You are here: <a href="">Home</a> &#10148; <a href="">Dive Into HTML5</a> &#10148;
+	<header>
+		<h1>INTRODUCTION:<br>FIVE THINGS YOU SHOULD KNOW ABOUT HTML5</h1>
+		
+	</header>
+
+	<details>
+		<summary><a href="">show table of contents</a></summary>
+		<p><a href="">&#8593; Full table of contents</a></p>
+		<ol>
+			<li>It’s not one big thing</li>
+			<li>You don’t need to throw anything away</li>
+			<li>It’s easy to get started</li>
+			<li>It already works</li>
+			<li>It’s here to stay</li>
+		</ol>
+	</details>
+
+	<hr>
+
+	<article>
+		<header>
+			<h2>1. It’s not one big thing</h2>
+		</header>
+		<img src="img/video.png" alt="video">
+		<p>You may well ask: “How can I start using <abbr>HTML5</abbr> if older browsers don’t support it?” But the question itself is misleading. <abbr>HTML5</abbr> is not one big thing; it is a collection of individual features. So you can’t detect “<abbr>HTML5</abbr> support,” because that doesn’t make any sense. But you <em>can</em> detect support for individual features, like canvas, video, or geolocation.</p>
+		<p>You may think of HTML as tags and angle brackets. That’s an important part of it, but it’s not the whole story. The <abbr>HTML5</abbr> specification also defines how those angle brackets interact with JavaScript, through the Document Object Model (<abbr>DOM</abbr>). <abbr>HTML5</abbr> doesn’t just define a <code>&lt;video&gt;</code> tag; there is also a corresponding DOM API for video objects in the DOM. You can use this API to detect support for different video formats, play a video, pause, mute audio, track how much of the video has been downloaded, and everything else you need to build a rich user experience around the <code>&lt;video&gt;</code> tag itself.</p>
+		<p><a href="">Chapter 2</a> and <a href="">Appendix A</a> will teach you how to properly detect support for each new <abbr>HTML5</abbr> feature.</p>
+	</article>
+
+	<article>
+		<header>
+			<h2>2. You don’t need to throw anything away</h2>
+		</header>
+		<img src="img/forms.png" alt="forms">
+		<p>Love it or hate it, you can’t deny that HTML 4 is the most successful markup format ever. <abbr>HTML5</abbr> builds on that success. You don’t need to throw away your existing markup. You don’t need to relearn things you already know. If your web application worked yesterday in HTML 4, it will still work today in <abbr>HTML5</abbr>. Period.</p>
+		<p>Now, if you want to <em>improve</em> your web applications, you’ve come to the right place. Here’s a concrete example: <abbr>HTML5</abbr> supports all the form controls from HTML 4, but it also includes new input controls. Some of these are long-overdue additions like sliders and date pickers; others are more subtle. For example, the <code>email</code> input type looks just like a text box, but mobile browsers will customize their onscreen keyboard to make it easier to type email addresses. Older browsers that don’t support the <code>email</code> input type will treat it as a regular text field, and the form still works with no markup changes or scripting hacks. This means you can start improving your web forms <em>today</em>, even if some of your visitors are stuck on IE 6.</p>
+		<p>Read all the gory details about <abbr>HTML5</abbr> forms in <a href="">Chapter 9</a>.</p>
+	</article>
+
+	<article>
+		<header>
+			<h2>3. It’s easy to get started</h2>
+		</header>
+		<img src="img/markup-with-arrow.png" alt="markup">
+		<p>“Upgrading” to <abbr>HTML5</abbr> can be as simple as changing your <em>doctype</em>. The doctype should already be on the first line of every HTML page. Previous versions of HTML defined a lot of doctypes, and choosing the right one could be tricky. In <abbr>HTML5</abbr>, there is only one doctype:</p>
+		<blockquote><code>&lt;!DOCTYPE html&gt;</code></blockquote>
+		<p>Upgrading to the <abbr>HTML5</abbr> doctype won’t break your existing markup, because <a href="">obsolete elements</a> previously defined in HTML 4 will still render in <abbr>HTML5</abbr>. But it will allow you to use — and validate — new semantic elements like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;header&gt;</code>, and <code>&lt;footer&gt;</code>. You’ll learn all about these new elements in <a href="">Chapter 3</a>.</p>
+	</article>
+
+	<article>
+		<header>
+			<h2>4. It already works</h2>
+		</header>
+		<img src="img/rel-email.png" alt="email">
+		<p>Whether you want to draw on a canvas, play video, design better forms, or build web applications that work offline, you’ll find that <abbr>HTML5</abbr> is already well-supported. Firefox, Safari, Chrome, Opera, and mobile browsers already support canvas (<a href="">Chapter 4</a>), video (<a href="">Chapter 5</a>), geolocation (<a href="">Chapter 6</a>), local storage (<a href="">Chapter 7</a>), and more. Google already supports microdata annotations (<a href="">Chapter 10</a>). Even Microsoft — rarely known for blazing the trail of standards support — supports most <abbr>HTML5</abbr> features in Internet Explorer 9.</p>
+		<img src="img/gears.png" alt="gears">
+		<p>Each chapter of this book includes the all-too-familiar browser compatibility charts. But more importantly, each chapter includes a frank discussion of your options if you need to support older browsers. <abbr>HTML5</abbr> features like geolocation (<a href="">Chapter 6</a>) and video (<a href="">Chapter 5</a>) were first provided by browser plugins like Gears or Flash. Other features, like canvas (<a href="">Chapter 4</a>), can be emulated entirely in JavaScript. This book will teach you how to target the native features of modern browsers, without leaving older browsers behind.</p>
+	</article>
+
+	<article>
+		<header>
+			<h2>5. It’s here to stay</h2>
+		</header>
+		<p>Tim Berners-Lee invented the world wide web in the early 1990s. He later founded the W3C to act as a steward of web standards, which the organization has done for more than 15 years. Here is what the W3C had to say about the future of web standards, in <time>July 2009</time>:</p>
+		<blockquote>
+			<p>Today the Director announces that when the XHTML 2 Working Group charter expires as scheduled at the end of 2009, the charter will not be renewed. By doing so, and by increasing resources in the HTML Working Group, W3C hopes to accelerate the progress of <abbr>HTML5</abbr> and clarify W3C’s position regarding the future of HTML.</p>
+		</blockquote>
+		<p><abbr>HTML5</abbr> is here to stay. <a href="">Let’s dive in</a>.</p>
+	</article>
+
+	<hr>
+
+	<article>
+		<h4>DID YOU KNOW?</h4>
+		<blockquote>
+			<p>In association with Google Press, O’Reilly is distributing this book in a variety of formats, including paper, ePub, Mobi, and DRM-free PDF. The paid edition is called “<abbr>HTML5</abbr>: Up &amp; Running,” and it is available now.</p>
+			<p>If you liked this introduction and want to show your appreciation, you can <a href="">buy “<abbr>HTML5</abbr>: Up &amp; Running” with this affiliate link</a> or <a href="">buy an electronic edition directly from O’Reilly</a>. You’ll get a book, and I’ll get a buck. I do not currently accept direct donations.</p>
+		</blockquote>
+	</article>
+
+	<footer>
+		<p>Copyright MMIX–MMXI <a href="">Mark Pilgrim</a></p>
+	</footer>
+	<input type="search" placeholder="Powered by Google&trade;">
+	<input type="submit" value="Search">
